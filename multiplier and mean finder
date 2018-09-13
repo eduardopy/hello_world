@@ -1,0 +1,29 @@
+#multiply
+
+def calc(*args):
+    answer = 0
+    for x in args:
+        answer = x + answer
+    print(answer)
+
+
+calc(1, 2, 3, 4, 5, 6, 7)
+
+#---------------------------------------------------------
+#mean finder
+
+potato = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+
+def mean(*args):
+    y = 0
+    for x in potato:
+        y = y + x
+        z = y / len(potato)
+    return z
+
+
+print(mean(potato))
+
+
+#----------------------------------------------------------
