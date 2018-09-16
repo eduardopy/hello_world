@@ -14,7 +14,7 @@ def download_url(url):
     print("csv created")
     fx = open(r'csv_file.csv', "w")
     for x in lines:
-        fx.write(x)
+        fx.write(x + '\n')
     fx.close()
 
 
