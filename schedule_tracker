@@ -1,9 +1,13 @@
-print('Beta 0.0.1')
+from datetime import datetime, time
+# definitions for proper program function 
+now = datetime.now()
+now_time = now.time()
+print('Beta 0.0.2', '2018-09-16 12:10:33.699475')
 print('Enjoy :)')
+# order of classes, and advisory that is out of order
 classes = ['PARHIST', 'AP CALC', 'AP ENGL', 'PHILOS', 'AP SPLIT', 'PHYSICS', 'AP STATS']
 advisory = ["ADVISORY"]
-
-    
+# what class is had in what day
 day_1 = classes[0:5]
 day_2 = classes[5:7] + classes[:3]
 day_3 = classes[3:] + classes[:1]
@@ -14,11 +18,30 @@ day_7 = day_4
 day_8 = classes[6:] + classes[:4]
 day_9 = classes[4:] + classes[:2]
 day_10 = classes[2:]
-print(day_10)
-
 
 
 def day_finder():
-    x = input('What day is it today?')
-    type(x)
-    return x
+    x = input('What day is it today? ')
+    if x is '1':
+        print(day_1)
+    if x is '2':
+        print(day_2)
+    if x is '3':
+        print(day_3)
+    if x is '4':
+        print(day_4)
+    if x is '5':
+        print(day_5)
+    if x is '6':
+        print(day_6)
+    if x is '7':
+        print(day_7)
+    if x is '8':
+        print(day_8)
+    if x is '9':
+        print(day_9)
+    if x is '10':
+        print(day_10)
+
+
+day_finder()
