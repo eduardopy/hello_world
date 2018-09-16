@@ -1,0 +1,18 @@
+import datetime
+
+xy = datetime.time
+
+
+print('Beta 0.0.1')
+print('Enjoy :)')
+classes = ['PARHIST', 'AP CALC', 'AP ENGL', 'PHILOS', 'AP SPLIT', 'PHYSICS', 'AP STATS']
+day_1 = []
+
+
+def day_finder():
+    x = input('What day is it today?')
+    type(x)
+    return x
+
+
+day_finder(x)
