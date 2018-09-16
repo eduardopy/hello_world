@@ -22,7 +22,7 @@ download_url(sample_url)
 
 
 
-#previous code prints some "fun" stuff, lets clean it up
+#previous code prints some "fun" stuff, lets clean it up and make some things more efficient
 
 from urllib import request
 
@@ -31,12 +31,11 @@ sample_url = r"https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv"
 
 def download_url(url):
     response = request.urlopen(url)
-    csv = response.read()
-    clean_csv = str(csv)
-    lines = clean_csv.split("\\n")
+    csv = str(response.read())
+    lines = csv.split("\\n")
     fx = open(r'csv_file.csv', "w")
     for x in lines:
-        fx.write(x)
+        fx.write(x + '\n')
     fx.close()
 
 
