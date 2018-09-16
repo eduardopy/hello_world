@@ -1,0 +1,9 @@
+from datetime import datetime, time
+# definitions for proper program function
+now = datetime.now()
+now_time = now.time()
+
+
+def time_finder():
+    if now_time >= time(10, 30) and now_time <= time(11, 30): #old way
+    if time(10, 30) <= now_time <= time(22, 30): #new efficient way
