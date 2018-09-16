@@ -1,18 +1,24 @@
-import datetime
-
-xy = datetime.time
-
-
 print('Beta 0.0.1')
 print('Enjoy :)')
 classes = ['PARHIST', 'AP CALC', 'AP ENGL', 'PHILOS', 'AP SPLIT', 'PHYSICS', 'AP STATS']
-day_1 = []
+advisory = ["ADVISORY"]
+
+    
+day_1 = classes[0:5]
+day_2 = classes[5:7] + classes[:3]
+day_3 = classes[3:] + classes[:1]
+day_4 = classes[1:6]
+day_5 = advisory + classes[6:] + classes[:3]
+day_6 = day_3
+day_7 = day_4
+day_8 = classes[6:] + classes[:4]
+day_9 = classes[4:] + classes[:2]
+day_10 = classes[2:]
+print(day_10)
+
 
 
 def day_finder():
     x = input('What day is it today?')
     type(x)
     return x
-
-
-day_finder(x)
