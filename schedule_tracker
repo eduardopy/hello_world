@@ -1,10 +1,10 @@
 from datetime import datetime, time
-# definitions for proper program function 
+# definitions for proper program function
 now = datetime.now()
 now_time = now.time()
 print('Beta 0.0.2', '2018-09-16 12:10:33.699475')
 print('Enjoy :)')
-# order of classes, and advisory that is out of order
+# order of classes, and adv isory that is out of order
 classes = ['PARHIST', 'AP CALC', 'AP ENGL', 'PHILOS', 'AP SPLIT', 'PHYSICS', 'AP STATS']
 advisory = ["ADVISORY"]
 # what class is had in what day
@@ -19,7 +19,25 @@ day_8 = classes[6:] + classes[:4]
 day_9 = classes[4:] + classes[:2]
 day_10 = classes[2:]
 
+# will figure out what time it is, and direct program to certain output
+def time_finder():
+    if time(8, 0) <= now_time <= time(9, 8):
+        clock = 1
+    if time(9, 13) <= now_time <= time(10, 21):
+        clock = 2
+    if time(10, 40) <= now_time <= time(11, 48):
+        clock = 3
+    if time(11, 53) <= now_time <= time(12, 33):
+        clock = 4  # specials
+    if time(12, 36) <= now_time <= time(13, 16):
+        clock = 5  # lunch
+    if time(13, 20) <= now_time <= time(14, 23):
+        clock = 6
+    if time(14, 27) <= now_time <= time(15, 30):
+        clock = 7
+    return clock
 
+# will ask for day input (for now) and output current/next class
 def day_finder():
     x = input('What day is it today? ')
     if x is '1':
