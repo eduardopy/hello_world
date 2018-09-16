@@ -19,31 +19,26 @@ day_8 = classes[6:] + classes[:4]
 day_9 = classes[4:] + classes[:2]
 day_10 = classes[2:]
 
+
 # will figure out what time it is, and direct program to certain output
+if time(8, 0) <= now_time <= time(9, 8):
+    clock = 1
+if time(9, 13) <= now_time <= time(10, 21):
+    clock = 2
+if time(10, 40) <= now_time <= time(11, 48):
+    clock = 3
+if time(11, 53) <= now_time <= time(12, 33):
+    clock = 4  # specials
+if time(12, 36) <= now_time <= time(13, 16):
+    clock = 5  # lunch
+if time(13, 20) <= now_time <= time(14, 23):
+    clock = 6
+if time(14, 27) <= now_time <= time(15, 30):
+    clock = 7
 
 
-def time_finder():
-    if time(8, 0) <= now_time <= time(9, 8):
-        clock = 1
-    elif time(9, 13) <= now_time <= time(10, 21):
-        clock = 2
-    elif time(10, 40) <= now_time <= time(11, 48):
-        clock = 3
-    elif time(11, 53) <= now_time <= time(12, 33):
-        clock = 4  # specials
-    elif time(12, 36) <= now_time <= time(13, 16):
-        clock = 5  # lunch
-    elif time(13, 20) <= now_time <= time(14, 23):
-        clock = 6
-    elif time(14, 27) <= now_time <= time(19, 30):
-        clock = 7
-    else :
-        clock = "there is a snake in my boot"
-    return clock
 
-time_finder()
-
-print(time_finder())
+print(clock)
 # will ask for day input (for now) and output current/next class
 
 
