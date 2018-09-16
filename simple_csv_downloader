@@ -1,0 +1,43 @@
+from urllib import request
+
+sample_url = r"https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv"
+
+
+def download_url(url):
+    print('establishing connection with secure regional server')
+    response = request.urlopen(url)
+    csv = response.read()
+    print('affirmative response')
+    clean_csv = str(csv)
+    lines = clean_csv.split("\\n")
+    print('csv split and reordered')
+    print("csv created")
+    fx = open(r'csv_file.csv', "w")
+    for x in lines:
+        fx.write(x)
+    fx.close()
+
+
+download_url(sample_url)
+
+
+
+#previous code prints some "fun" stuff, lets clean it up
+
+from urllib import request
+
+sample_url = r"https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv"
+
+
+def download_url(url):
+    response = request.urlopen(url)
+    csv = response.read()
+    clean_csv = str(csv)
+    lines = clean_csv.split("\\n")
+    fx = open(r'csv_file.csv', "w")
+    for x in lines:
+        fx.write(x)
+    fx.close()
+
+
+download_url(sample_url)
