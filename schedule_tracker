@@ -43,7 +43,7 @@ def time_finder():
     # elif time(0, 0) <= now_time <= time(7, 30):
         clock = 0 # should remove, accounts for time before school
     else :
-        clock = 1
+        clock = 0
     return clock
 
 # will ask for day input (for now) and output current/next class
