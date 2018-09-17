@@ -1,8 +1,9 @@
 from datetime import datetime, time
+#import time
 # definitions for proper program function
 now = datetime.now()
 now_time = now.time()
-print('Beta 0.0.4', '2018-09-16 20:19:51.047774')
+print('Beta 0.0.5', '2018-09-17 18:53:56.594060')
 print('Enjoy :)')
 # order of classes, and advisory that is out of order
 classes = ['PARHIST', 'AP CALC', 'AP ENGL', 'PHILOS', 'AP SPLIT', 'PHYSICS', 'AP STATS']
@@ -40,7 +41,7 @@ def time_finder():
     # elif time(0, 0) <= now_time <= time(7, 30):
         clock = 0 # should remove, accounts for time before school
     else :
-        clock = 0
+        clock = 6
     return clock
 
 print(time_finder())
@@ -52,154 +53,154 @@ def placer():
         if time_finder() is 1:
             print('Your class right now is:', day_1[0], '\nNext class is:', day_1[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_1[1], '\nNext class is:', day_1[1])
+            print('Your class right now is:', day_1[1], '\nNext class is:', day_1[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_1[2], '\nNext class is:', day_1[1])
-        elif time_finder() is 4:
-            print('Your class right now is:', day_1[3], '\nNext class is:', day_1[1])
-        elif time_finder() is 5:
-            print('Your class right now is:', day_1[4], '\nNext class is:', day_1[1])
+            print('Your class right now is:', day_1[2], '\nNext class is:', day_1[3])
+        elif time_finder() is 4:  # special
+            print('Your class right now is:', day_1[3], '\nNext class is:', day_1[4])
+        elif time_finder() is 5:  # lunch
+            print('Your class right now is:', day_1[4], '\nNext class is:', day_1[5])
         elif time_finder() is 6:
-            print('Your class right now is:', day_1[5], '\nNext class is:', day_1[1])
+            print('Your class right now is:', day_1[5], '\nNext class is:', day_1[6])
         elif time_finder() is 7:
             print('Your class right now is:', day_1[6], '\nYou\'re done for the day! :)')
     elif day is '2':
         if time_finder() is 1:
             print('Your class right now is:', day_2[0], '\nNext class is:', day_2[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_2[1], '\nNext class is:', day_2[1])
+            print('Your class right now is:', day_2[1], '\nNext class is:', day_2[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_2[2], '\nNext class is:', day_2[1])
+            print('Your class right now is:', day_2[2], '\nNext class is:', day_2[3])
         elif time_finder() is 4:
-            print('Your class right now is:', day_2[3], '\nNext class is:', day_2[1])
+            print('Your class right now is:', day_2[3], '\nNext class is:', day_2[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_2[4], '\nNext class is:', day_2[1])
+            print('Your class right now is:', day_2[4], '\nNext class is:', day_2[5])
         elif time_finder() is 6:
-            print('Your class right now is:', day_2[5], '\nNext class is:', day_2[1])
+            print('Your class right now is:', day_2[5], '\nNext class is:', day_2[6])
         elif time_finder() is 7:
             print('Your class right now is:', day_2[6], '\nYou\'re done for the day! :)')
     elif day is '3':
         if time_finder() is 1:
             print('Your class right now is:', day_3[0], '\nNext class is:', day_3[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_3[1], '\nNext class is:', day_3[1])
+            print('Your class right now is:', day_3[1], '\nNext class is:', day_3[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_3[2], '\nNext class is:', day_3[1])
+            print('Your class right now is:', day_3[2], '\nNext class is:', day_3[3])
         elif time_finder() is 4:
-            print('Your class right now is:', day_3[3], '\nNext class is:', day_3[1])
+            print('Your class right now is:', day_3[3], '\nNext class is:', day_3[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_3[4], '\nNext class is:', day_3[1])
+            print('Your class right now is:', day_3[4], '\nNext class is:', day_3[5])
         elif time_finder() is 6:
-            print('Your class right now is:', day_3[5], '\nNext class is:', day_3[1])
+            print('Your class right now is:', day_3[5], '\nNext class is:', day_3[6])
         elif time_finder() is 7:
             print('Your class right now is:', day_3[6], '\nYou\'re done for the day! :)')
     elif day is '4':
         if time_finder() is 1:
             print('Your class right now is:', day_4[0], '\nNext class is:', day_4[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_4[1], '\nNext class is:', day_4[1])
+            print('Your class right now is:', day_4[1], '\nNext class is:', day_4[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_4[2], '\nNext class is:', day_4[1])
+            print('Your class right now is:', day_4[2], '\nNext class is:', day_4[3])
         elif time_finder() is 4:
-            print('Your class right now is:', day_4[3], '\nNext class is:', day_4[1])
+            print('Your class right now is:', day_4[3], '\nNext class is:', day_4[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_4[4], '\nNext class is:', day_4[1])
+            print('Your class right now is:', day_4[4], '\nNext class is:', day_4[5])
         elif time_finder() is 6:
-            print('Your class right now is:', day_4[5], '\nNext class is:', day_4[1])
+            print('Your class right now is:', day_4[5], '\nNext class is:', day_4[6])
         elif time_finder() is 7:
             print('Your class right now is:', day_4[6], '\nYou\'re done for the day! :)')
     elif day is '5':
         if time_finder() is 1:
             print('Your class right now is:', day_5[0], '\nNext class is:', day_5[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_5[1], '\nNext class is:', day_5[1])
+            print('Your class right now is:', day_5[1], '\nNext class is:', day_5[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_5[2], '\nNext class is:', day_5[1])
+            print('Your class right now is:', day_5[2], '\nNext class is:', day_5[3])
         elif time_finder() is 4:
-            print('Your class right now is:', day_5[3], '\nNext class is:', day_5[1])
+            print('Your class right now is:', day_5[3], '\nNext class is:', day_5[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_5[4], '\nNext class is:', day_5[1])
+            print('Your class right now is:', day_5[4], '\nNext class is:', day_5[5])
         elif time_finder() is 6:
-            print('Your class right now is:', day_5[5], '\nNext class is:', day_5[1])
+            print('Your class right now is:', day_5[5], '\nNext class is:', day_5[6])
         elif time_finder() is 7:
             print('Your class right now is:', day_5[6], '\nYou\'re done for the day! :)')
     elif day is '6':
         if time_finder() is 1:
             print('Your class right now is:', day_6[0], '\nNext class is:', day_6[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_6[1], '\nNext class is:', day_6[1])
+            print('Your class right now is:', day_6[1], '\nNext class is:', day_6[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_6[2], '\nNext class is:', day_6[1])
+            print('Your class right now is:', day_6[2], '\nNext class is:', day_6[3])
         elif time_finder() is 4:
-            print('Your class right now is:', day_6[3], '\nNext class is:', day_6[1])
+            print('Your class right now is:', day_6[3], '\nNext class is:', day_6[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_6[4], '\nNext class is:', day_6[1])
+            print('Your class right now is:', day_6[4], '\nNext class is:', day_6[5])
         elif time_finder() is 6:
-            print('Your class right now is:', day_6[5], '\nNext class is:', day_6[1])
+            print('Your class right now is:', day_6[5], '\nNext class is:', day_6[6])
         elif time_finder() is 7:
             print('Your class right now is:', day_6[6], '\nYou\'re done for the day! :)')
     elif day is '7':
         if time_finder() is 1:
             print('Your class right now is:', day_7[0], '\nNext class is:', day_7[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_7[1], '\nNext class is:', day_7[1])
+            print('Your class right now is:', day_7[1], '\nNext class is:', day_7[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_7[2], '\nNext class is:', day_7[1])
+            print('Your class right now is:', day_7[2], '\nNext class is:', day_7[3])
         elif time_finder() is 4:
-            print('Your class right now is:', day_7[3], '\nNext class is:', day_7[1])
+            print('Your class right now is:', day_7[3], '\nNext class is:', day_7[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_7[4], '\nNext class is:', day_7[1])
+            print('Your class right now is:', day_7[4], '\nNext class is:', day_7[5])
         elif time_finder() is 6:
-            print('Your class right now is:', day_7[5], '\nNext class is:', day_7[1])
+            print('Your class right now is:', day_7[5], '\nNext class is:', day_7[6])
         elif time_finder() is 7:
             print('Your class right now is:', day_7[6], '\nYou\'re done for the day! :)')
     elif day is '8':
         if time_finder() is 1:
             print('Your class right now is:', day_8[0], '\nNext class is:', day_8[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_8[1], '\nNext class is:', day_8[1])
+            print('Your class right now is:', day_8[1], '\nNext class is:', day_8[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_8[2], '\nNext class is:', day_8[1])
+            print('Your class right now is:', day_8[2], '\nNext class is:', day_8[3])
         elif time_finder() is 4:
-            print('Your class right now is:', day_8[3], '\nNext class is:', day_8[1])
+            print('Your class right now is:', day_8[3], '\nNext class is:', day_8[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_8[4], '\nNext class is:', day_8[1])
+            print('Your class right now is:', day_8[4], '\nNext class is:', day_8[5])
         elif time_finder() is 6:
-            print('Your class right now is:', day_8[5], '\nNext class is:', day_8[1])
+            print('Your class right now is:', day_8[5], '\nNext class is:', day_8[6])
         elif time_finder() is 7:
             print('Your class right now is:', day_8[6], '\nYou\'re done for the day! :)')
     elif day is '9':
         if time_finder() is 1:
             print('Your class right now is:', day_9[0], '\nNext class is:', day_9[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_9[1], '\nNext class is:', day_9[1])
+            print('Your class right now is:', day_9[1], '\nNext class is:', day_9[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_9[2], '\nNext class is:', day_9[1])
+            print('Your class right now is:', day_9[2], '\nNext class is:', day_9[3])
         elif time_finder() is 4:
-            print('Your class right now is:', day_9[3], '\nNext class is:', day_9[1])
+            print('Your class right now is:', day_9[3], '\nNext class is:', day_9[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_9[4], '\nNext class is:', day_9[1])
+            print('Your class right now is:', day_9[4], '\nNext class is:', day_9[5])
         elif time_finder() is 6:
-            print('Your class right now is:', day_9[5], '\nNext class is:', day_9[1])
+            print('Your class right now is:', day_9[5], '\nNext class is:', day_9[6])
         elif time_finder() is 7:
             print('Your class right now is:', day_9[6], '\nYou\'re done for the day! :)')
     elif day is '10':
         if time_finder() is 1:
             print('Your class right now is:', day_10[0], '\nNext class is:', day_10[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_10[1], '\nNext class is:', day_10[1])
+            print('Your class right now is:', day_10[1], '\nNext class is:', day_10[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_10[2], '\nNext class is:', day_10[1])
+            print('Your class right now is:', day_10[2], '\nNext class is:', day_10[3])
         elif time_finder() is 4:
-            print('Your class right now is:', day_10[3], '\nNext class is:', day_10[1])
+            print('Your class right now is:', day_10[3], '\nNext class is:', day_10[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_10[4], '\nNext class is:', day_10[1])
+            print('Your class right now is:', day_10[4], '\nNext class is:', day_10[5])
         elif time_finder() is 6:
-            print('Your class right now is:', day_10[5], '\nNext class is:', day_10[1])
+            print('Your class right now is:', day_10[5], '\nNext class is:', day_10[6])
         elif time_finder() is 7:
             print('Your class right now is:', day_10[6], '\nYou\'re done for the day! :)')
 
-
+#time.sleep(60)
 placer()
 # def time_remaining():
 #    if clock is 1:
