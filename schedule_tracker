@@ -8,6 +8,7 @@ hours = datetime.now().time().hour
 actual_time = [hours, minutes]
 hour_in_minutes = actual_time[0] * 60
 minutes_total = hour_in_minutes + actual_time[1]
+
 # TODO LIST: -make lunch/specials/break work properly -Allow user input for classes -Make memory file -remaining time
 print('Beta 0.0.7', '2018-09-20 19:40:56.594060')
 print('Enjoy :)')
@@ -49,6 +50,7 @@ def time_finder():
         clock = 0 # should remove, accounts for time before school
     else :
         clock = 0
+    clock = 2
     return clock
 
 
@@ -69,6 +71,8 @@ def remaining():
         x = 796 - minutes_total
     return x
 
+remaining_time = , 'there are', remaining(),'minutes remaining',
+
 # will ask for day input (for now) and output current/next class
 def placer():
     day = 0
@@ -77,154 +81,154 @@ def placer():
         print('Break scheduling functionality is still under development. I expect it to be ready in release 0.1. \n if you got this message unexpectedly contact the developer (me)')
     elif day is '1':
         if time_finder() is 1:
-            print('Good Morning!\nYour class right now is:', day_1[0],' and there are', remaining(), 'minutes remaining' '\nNext class is:', day_1[1])
+            print('Good Morning!\nYour class right now is:', day_1[0],remaining_time,'\nNext class is:', day_1[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_1[1], '\nNext class is:', day_1[2])
+            print('Your class right now is:', day_1[1],remaining_time, '\nNext class is:', day_1[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_1[2], '\nNext class is:', day_1[3])
+            print('Your class right now is:', day_1[2],remaining_time, '\nNext class is:', day_1[3])
         elif time_finder() is 'specials':  # special placeholder for now
-            print('You have specials right now, your next class is:', day_1[3])
+            print('You have specials right now, your next class is:', day_1[3],'in', remaining(), 'minutes')
         elif time_finder() is 'lunch':  # lunch
-            print('You have lunch right now, your next class is:', day_1[3])
+            print('You have lunch right now, your next class is:', day_1[3],'in', remaining(), 'minutes')
         elif time_finder() is 4:
-            print('Your class right now is:', day_1[3], '\nNext class is:', day_1[4])
+            print('Your class right now is:', day_1[3],remaining_time, '\nNext class is:', day_1[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_1[4], '\nYou\'re done for the day! :)')
+            print('Your class right now is:', day_1[4],remaining_time, '\nYou\'re done for the day! :)')
     elif day is '2':
         if time_finder() is 1:
-            print('Good Morning!\nYour class right now is:', day_2[0], '\nNext class is:', day_2[1])
+            print('Good Morning!\nYour class right now is:', day_2[0],remaining_time, '\nNext class is:', day_2[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_2[1], '\nNext class is:', day_2[2])
+            print('Your class right now is:', day_2[1],remaining_time, '\nNext class is:', day_2[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_2[2], '\nNext class is:', day_2[3])
+            print('Your class right now is:', day_2[2],remaining_time, '\nNext class is:', day_2[3])
         elif time_finder() is 'specials':  # special placeholder for now
-            print('You have specials right now, your next class is:', day_2[3])
+            print('You have specials right now, your next class is:', day_2[3],'in', remaining(), 'minutes')
         elif time_finder() is 'lunch':  # lunch
-            print('You have lunch right now, your next class is:', day_2[3])
+            print('You have lunch right now, your next class is:', day_2[3],'in', remaining(), 'minutes')
         elif time_finder() is 4:
-            print('Your class right now is:', day_2[3], '\nNext class is:', day_2[4])
+            print('Your class right now is:', day_2[3],remaining_time, '\nNext class is:', day_2[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_2[4], '\nYou\'re done for the day! :)')
+            print('Your class right now is:', day_2[4],remaining_time, '\nYou\'re done for the day! :)')
     elif day is '3':
         if time_finder() is 1:
-            print('Good Morning!\nYour class right now is:', day_3[0], '\nNext class is:', day_3[1])
+            print('Good Morning!\nYour class right now is:', day_3[0],remaining_time, '\nNext class is:', day_3[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_3[1], '\nNext class is:', day_3[2])
+            print('Your class right now is:', day_3[1],remaining_time, '\nNext class is:', day_3[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_3[2], '\nNext class is:', day_3[3])
+            print('Your class right now is:', day_3[2],remaining_time, '\nNext class is:', day_3[3])
         elif time_finder() is 'specials':  # special placeholder for now
-            print('You have specials right now, your next class is:', day_3[3])
+            print('You have specials right now, your next class is:', day_3[3],'in', remaining(), 'minutes')
         elif time_finder() is 'lunch':  # lunch
-            print('You have lunch right now, your next class is:', day_3[3])
+            print('You have lunch right now, your next class is:', day_3[3],'in', remaining(), 'minutes')
         elif time_finder() is 4:
-            print('Your class right now is:', day_3[3], '\nNext class is:', day_3[4])
+            print('Your class right now is:', day_3[3],remaining_time, '\nNext class is:', day_3[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_3[4], '\nYou\'re done for the day! :)')
+            print('Your class right now is:', day_3[4],remaining_time, '\nYou\'re done for the day! :)')
     elif day is '4':
         if time_finder() is 1:
-            print('Good Morning!\nYour class right now is:', day_4[0], '\nNext class is:', day_4[1])
+            print('Good Morning!\nYour class right now is:', day_4[0],remaining_time, '\nNext class is:', day_4[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_4[1], '\nNext class is:', day_4[2])
+            print('Your class right now is:', day_4[1],remaining_time, '\nNext class is:', day_4[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_4[2], '\nNext class is:', day_4[3])
+            print('Your class right now is:', day_4[2],remaining_time, '\nNext class is:', day_4[3])
         elif time_finder() is 'specials':  # special placeholder for now
-            print('You have specials right now, your next class is:', day_4[3])
+            print('You have specials right now, your next class is:', day_4[3],'in', remaining(), 'minutes')
         elif time_finder() is 'lunch':  # lunch
-            print('You have lunch right now, your next class is:', day_4[3])
+            print('You have lunch right now, your next class is:', day_4[3],'in', remaining(), 'minutes')
         elif time_finder() is 4:
-            print('Your class right now is:', day_4[3], '\nNext class is:', day_4[4])
+            print('Your class right now is:', day_4[3],remaining_time, '\nNext class is:', day_4[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_4[4], '\nYou\'re done for the day! :)')
+            print('Your class right now is:', day_4[4],remaining_time, '\nYou\'re done for the day! :)')
     elif day is '5':
         if time_finder() is 1:
-            print('Good Morning!\nYour class right now is:', day_5[0], '\nNext class is:', day_5[1])
+            print('Good Morning!\nYour class right now is:', day_5[0],remaining_time, '\nNext class is:', day_5[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_5[1], '\nNext class is:', day_5[2])
+            print('Your class right now is:', day_5[1],remaining_time, '\nNext class is:', day_5[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_5[2], '\nNext class is:', day_5[3])
+            print('Your class right now is:', day_5[2],remaining_time, '\nNext class is:', day_5[3])
         elif time_finder() is 'specials':  # special placeholder for now
-            print('You have specials right now, your next class is:', day_5[3])
+            print('You have specials right now, your next class is:', day_5[3],'in', remaining(), 'minutes')
         elif time_finder() is 'lunch':  # lunch
-            print('You have lunch right now, your next class is:', day_5[3])
+            print('You have lunch right now, your next class is:', day_5[3],'in', remaining(), 'minutes')
         elif time_finder() is 4:
-            print('Your class right now is:', day_5[3], '\nNext class is:', day_5[4])
+            print('Your class right now is:', day_5[3],remaining_time, '\nNext class is:', day_5[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_5[4], '\nYou\'re done for the day! :)')
+            print('Your class right now is:', day_5[4],remaining_time, '\nYou\'re done for the day! :)')
     elif day is '6':
         if time_finder() is 1:
-            print('Good Morning!\nYour class right now is:', day_6[0], '\nNext class is:', day_6[1])
+            print('Good Morning!\nYour class right now is:', day_6[0],remaining_time, '\nNext class is:', day_6[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_6[1], '\nNext class is:', day_6[2])
+            print('Your class right now is:', day_6[1],remaining_time, '\nNext class is:', day_6[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_6[2], '\nNext class is:', day_6[3])
+            print('Your class right now is:', day_6[2],remaining_time, '\nNext class is:', day_6[3])
         elif time_finder() is 'specials':  # special placeholder for now
-            print('You have specials right now, your next class is:', day_6[3])
+            print('You have specials right now, your next class is:', day_6[3],'in', remaining(), 'minutes')
         elif time_finder() is 'lunch':  # lunch
-            print('You have lunch right now, your next class is:', day_6[3])
+            print('You have lunch right now, your next class is:', day_6[3],'in', remaining(), 'minutes')
         elif time_finder() is 4:
-            print('Your class right now is:', day_6[3], '\nNext class is:', day_6[4])
+            print('Your class right now is:', day_6[3],remaining_time, '\nNext class is:', day_6[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_6[4], '\nYou\'re done for the day! :)')
+            print('Your class right now is:', day_6[4],remaining_time, '\nYou\'re done for the day! :)')
     elif day is '7':
         if time_finder() is 1:
-            print('Good Morning!\nYour class right now is:', day_7[0], '\nNext class is:', day_7[1])
+            print('Good Morning!\nYour class right now is:', day_7[0],remaining_time, '\nNext class is:', day_7[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_7[1], '\nNext class is:', day_7[2])
+            print('Your class right now is:', day_7[1],remaining_time, '\nNext class is:', day_7[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_7[2], '\nNext class is:', day_7[3])
+            print('Your class right now is:', day_7[2],remaining_time, '\nNext class is:', day_7[3])
         elif time_finder() is 'specials':  # special placeholder for now
-            print('You have specials right now, your next class is:', day_7[3])
+            print('You have specials right now, your next class is:', day_7[3],'in', remaining(), 'minutes')
         elif time_finder() is 'lunch':  # lunch
-            print('You have lunch right now, your next class is:', day_7[3])
+            print('You have lunch right now, your next class is:', day_7[3],'in', remaining(), 'minutes')
         elif time_finder() is 4:
-            print('Your class right now is:', day_7[3], '\nNext class is:', day_7[4])
+            print('Your class right now is:', day_7[3],remaining_time, '\nNext class is:', day_7[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_7[4], '\nYou\'re done for the day! :)')
+            print('Your class right now is:', day_7[4],remaining_time, '\nYou\'re done for the day! :)')
     elif day is '8':
         if time_finder() is 1:
-            print('Good Morning!\nYour class right now is:', day_8[0], '\nNext class is:', day_8[1])
+            print('Good Morning!\nYour class right now is:', day_8[0],remaining_time, '\nNext class is:', day_8[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_8[1], '\nNext class is:', day_8[2])
+            print('Your class right now is:', day_8[1],remaining_time, '\nNext class is:', day_8[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_8[2], '\nNext class is:', day_8[3])
+            print('Your class right now is:', day_8[2],remaining_time, '\nNext class is:', day_8[3])
         elif time_finder() is 'specials':  # special placeholder for now
-            print('You have specials right now, your next class is:', day_8[3])
+            print('You have specials right now, your next class is:', day_8[3],'in', remaining(), 'minutes')
         elif time_finder() is 'lunch':  # lunch
-            print('You have lunch right now, your next class is:', day_8[3])
+            print('You have lunch right now, your next class is:', day_8[3],'in', remaining(), 'minutes')
         elif time_finder() is 4:
-            print('Your class right now is:', day_8[3], '\nNext class is:', day_8[4])
+            print('Your class right now is:', day_8[3],remaining_time, '\nNext class is:', day_8[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_8[4], '\nYou\'re done for the day! :)')
+            print('Your class right now is:', day_8[4],remaining_time, '\nYou\'re done for the day! :)')
     elif day is '9':
         if time_finder() is 1:
-            print('Good Morning!\nYour class right now is:', day_9[0], '\nNext class is:', day_9[1])
+            print('Good Morning!\nYour class right now is:', day_9[0],remaining_time, '\nNext class is:', day_9[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_9[1], '\nNext class is:', day_9[2])
+            print('Your class right now is:', day_9[1],remaining_time, '\nNext class is:', day_9[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_9[2], '\nNext class is:', day_9[3])
+            print('Your class right now is:', day_9[2],remaining_time, '\nNext class is:', day_9[3])
         elif time_finder() is 'specials':  # special placeholder for now
-            print('You have specials right now, your next class is:', day_9[3])
+            print('You have specials right now, your next class is:', day_9[3],'in', remaining(), 'minutes')
         elif time_finder() is 'lunch':  # lunch
-            print('You have lunch right now, your next class is:', day_9[3])
+            print('You have lunch right now, your next class is:', day_9[3],'in', remaining(), 'minutes')
         elif time_finder() is 4:
-            print('Your class right now is:', day_9[3], '\nNext class is:', day_9[4])
+            print('Your class right now is:', day_9[3],remaining_time, '\nNext class is:', day_9[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_9[4], '\nYou\'re done for the day! :)')
+            print('Your class right now is:', day_9[4],remaining_time, '\nYou\'re done for the day! :)')
     elif day is '10':
         if time_finder() is 1:
-            print('Good Morning!\nYour class right now is:', day_10[0], '\nNext class is:', day_10[1])
+            print('Good Morning!\nYour class right now is:', day_10[0],remaining_time, '\nNext class is:', day_10[1])
         elif time_finder() is 2:
-            print('Your class right now is:', day_10[1], '\nNext class is:', day_10[2])
+            print('Your class right now is:', day_10[1],remaining_time, '\nNext class is:', day_10[2])
         elif time_finder() is 3:
-            print('Your class right now is:', day_10[2], '\nNext class is:', day_10[3])
+            print('Your class right now is:', day_10[2],remaining_time, '\nNext class is:', day_10[3])
         elif time_finder() is 'specials':  # special placeholder for now
-            print('You have specials right now, your next class is:', day_10[3])
+            print('You have specials right now, your next class is:', day_10[3],'in', remaining(), 'minutes')
         elif time_finder() is 'lunch':  # lunch
-            print('You have lunch right now, your next class is:', day_10[3])
+            print('You have lunch right now, your next class is:', day_10[3],'in', remaining(), 'minutes')
         elif time_finder() is 4:
-            print('Your class right now is:', day_10[3], '\nNext class is:', day_10[4])
+            print('Your class right now is:', day_10[3],remaining_time, '\nNext class is:', day_10[4])
         elif time_finder() is 5:
-            print('Your class right now is:', day_10[4], '\nYou\'re done for the day! :)')
+            print('Your class right now is:', day_10[4],remaining_time, '\nYou\'re done for the day! :)')
 
 #time.sleep(60)
 placer()
