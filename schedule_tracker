@@ -3,8 +3,13 @@ from datetime import datetime, time
 # definitions for proper program function
 now = datetime.now()
 now_time = now.time()
+minutes = datetime.now().time().minute
+hours = datetime.now().time().hour
+actual_time = [hours, minutes]
+hour_in_minutes = actual_time[0] * 60
+minutes_total = hour_in_minutes + actual_time[1]
 # TODO LIST: -make lunch/specials/break work properly -Allow user input for classes -Make memory file -remaining time
-print('Beta 0.0.6', '2018-09-17 19:40:56.594060')
+print('Beta 0.0.7', '2018-09-20 19:40:56.594060')
 print('Enjoy :)')
 #time.sleep(1)
 # order of classes, and advisory that is out of order
@@ -46,14 +51,33 @@ def time_finder():
         clock = 0
     return clock
 
+
+def remaining():
+    if time_finder() is 1:
+        x = 548 - minutes_total
+    elif time_finder() is 2:
+        x = 621 - minutes_total
+    elif time_finder() is 3:
+        x = 708 - minutes_total
+    elif time_finder() is 4:
+        x = 863 - minutes_total
+    elif time_finder() is 5:
+        x = 930 - minutes_total
+    elif time_finder() is 'specials':
+        x = 753 - minutes_total
+    elif time_finder() is 'lunch':
+        x = 796 - minutes_total
+    return x
+
 # will ask for day input (for now) and output current/next class
 def placer():
+    day = 0
     day = input('What day is it today? ')
     if time_finder() is 0:
         print('Break scheduling functionality is still under development. I expect it to be ready in release 0.1. \n if you got this message unexpectedly contact the developer (me)')
     elif day is '1':
         if time_finder() is 1:
-            print('Good Morning!\nYour class right now is:', day_1[0], '\nNext class is:', day_1[1])
+            print('Good Morning!\nYour class right now is:', day_1[0],' and there are', remaining(), 'minutes remaining' '\nNext class is:', day_1[1])
         elif time_finder() is 2:
             print('Your class right now is:', day_1[1], '\nNext class is:', day_1[2])
         elif time_finder() is 3:
@@ -206,5 +230,4 @@ def placer():
 placer()
 print('\n\n\nPress anything to exit...')
 wait = input()
-# def time_remaining():
-#    if clock is 1:
+
